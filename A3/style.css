@@ -23,7 +23,7 @@ h1 {
 }
 
 nav {
-    background-color: #00054b;
+    background-color: #044a1d;
     text-align: center;
 }
 
@@ -32,10 +32,16 @@ nav a {
     width: 100px;
     height: 25px;
     text-align: center;
-    background-color: #00054b;
-    padding: 25px;
+    background-color: #044a1d;
+    #padding: 45px;
+    #margin: 10px;
     color: #fff;
     text-decoration: none;
+    /* fixing padding for nav */
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 30px;
 }
 
 nav a:hover {
@@ -53,8 +59,13 @@ section {
     margin: 20px;
 }
 
+img { /* had issues with my main RMS image */
+  max-width: 50%;
+  height: auto;
+}
+
 footer {
-    background-color: #00054b;
+    background-color: #044a1d;
     height: 20px;
     text-align: center;
     padding: 10px;
