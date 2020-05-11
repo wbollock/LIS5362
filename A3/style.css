@@ -1,0 +1,62 @@
+/* CSS - A3 */
+/* Will Bollock */
+body {
+    background-color: #efefef;
+    font-family: Arial, Verdana, Tahoma;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    background-color: #fff;
+}
+
+header {
+    background-color: #FFF;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #151a9b;
+}
+
+nav {
+    background-color: #00054b;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: #00054b;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #f3f1e5;
+    color: #00054b;
+}
+
+section {
+    overflow: hidden;
+    margin: 10px;
+}
+
+.float-right {
+    float: right;
+    margin: 20px;
+}
+
+footer {
+    background-color: #00054b;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
