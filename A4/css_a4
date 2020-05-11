@@ -1,0 +1,116 @@
+/* Setting the background color for the site and fonts to use */
+body {
+    background-color: #efefef;
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+/* We are placing a container in each section now so we've removed the background color */
+/* We've set a fixed width of 1000 pixels and told our container to resize as content is added with the overflow property */
+.container {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Setting values for the header section where our site title is displayed */
+/* Adding even more padding to so it isn't covered by the nav bar */
+/* We must set a background color in case the image does not load */
+header {
+    background-color: #FFF;
+    height: 150px;
+    text-align: center;
+    padding: 250px;
+    background: url(images/header.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+
+/* Setting the color for all h1 elements */
+h1 {
+    color: #fff;
+}
+
+/* Creating a class for aligning content to the right */
+.float-right {
+    float: right;
+    margin: 20px;
+}
+
+/* Creating a class for aligning content to the left */
+.float-left {
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Our navigation bar is now fixed to the top of the screen */
+nav {
+    background-color: #00054b;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+/* Designing the links in our navigation bar to look like buttons by applying a width, height, padding */
+nav a {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: #00054b;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Use the hover action to change the button background color and font color when the mouse is over it */
+nav a:hover {
+    background-color: #dbd9cd;
+    color: #00054b;
+}
+
+/* Removing unnecessary margins from our sections so they stack right on top of each other */
+section {
+    margin: 0;
+}
+
+/* Creating a custom ID for our first section with a background color and plenty of padding */
+/* Name your section IDs something descriptive */
+#main {
+    background-color: #dbd9cd;
+    color: #0c275e;
+    padding: 80px;
+}
+
+/* Creating a custom ID for our second section with a background color and plenty of padding */
+/* Name your section IDs something descriptive */
+#paintings {
+    background-color: #0c275e;
+    color: #dbd9cd;
+    padding: 80px;
+}
+
+/* Creating a custom ID for our third section with a background color and plenty of padding */
+/* Name your section IDs something descriptive */
+#life {
+    background-color: #cccccc;
+    color: #0c275e;
+    padding: 60px;
+}
+
+/* Fluidly controlling the width of our images with a percent value */
+img {
+    width: 35%;
+}
+
+/* Setting values for the footer section where our site copyright is displayed */
+footer {
+    background-color: #00054b;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}

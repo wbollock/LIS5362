@@ -1,0 +1,72 @@
+/* Setting the background color for the site and fonts to use */
+body {
+    background-color: #efefef;
+    font-family: Arial, Verdana, Tahoma;
+}
+
+/* Creating a class called container with a fixed width and background color */
+/* Setting the margin property to auto centers the container on the page */
+.container {
+    width: 1000px;
+    margin: auto;
+    background-color: #fff;
+}
+
+/* Setting values for the header section where our site title is displayed */
+/* Adding padding to create proper spacing within the element */
+header {
+    background-color: #FFF;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Setting the color for all h1 elements */
+h1 {
+    color: #151a9b;
+}
+
+/* Specifying the background color and alignment of our navigation bar*/
+nav {
+    background-color: #00054b;
+    text-align: center;
+}
+
+/* Designing the links in our navigation bar to look like buttons by applying a width, height, padding */
+nav a {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: #00054b;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Use the hover action to change the button background color and font color when the mouse is over it */
+nav a:hover {
+    background-color: #f3f1e5;
+    color: #00054b;
+}
+
+/* We must tell our sections to grow as content increases, and add some additional margin space between them */
+section {
+    overflow: hidden;
+    margin: 10px;
+}
+
+/* Creating a class for aligning our image to the right */
+.float-right {
+    float: right;
+    margin: 20px;
+}
+
+/* Let's create a footer with a background color and height */
+footer {
+    background-color: #00054b;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
