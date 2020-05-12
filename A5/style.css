@@ -1,0 +1,238 @@
+/* Setting the background color for the site and fonts to use */
+body {
+    background-color: #efefef;
+    font-family: Arial, Tahoma;
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+}
+
+/* We are placing a container in each section now so we've removed the background color */
+/* We've set a fixed width of 1000 pixels and told our container to resize as content is added with the overflow property */
+.container {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Setting values for the header section where our site title is displayed */
+/* Adding even more padding to so it isn't covered by the nav bar */
+/* We must set a background color in case the image does not load */
+header {
+    background-color: #FFF;
+    height: 150px;
+    text-align: center;
+    padding: 250px;
+    background: url(img/header.jpeg) no-repeat center top fixed;
+    background-size: cover;
+}
+
+/* Setting the color for all h1 elements */
+h1 {
+    color: #fff;
+    font-family: 'Suez One', Arial, Verdana;
+    text-shadow: 4px 4px #00054b;
+    font-size: 50px;
+    margin: 0;
+}
+
+h2,
+h3 {
+    font-family: 'Suez One', Arial, Verdana;
+    font-size: 28px;
+}
+
+/* Creating a class for aligning content to the right */
+.float-right {
+    float: right;
+    margin: 20px;
+}
+
+/* Creating a class for aligning content to the left */
+.float-left {
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Our navigation bar is now fixed to the top of the screen */
+nav {
+    background-color: #044a1d;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;font-family: 'Suez One', Arial, Verdana;
+}
+
+/* Designing the links in our navigation bar to look like buttons by applying a width, height, padding */
+nav a {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: #044a1d;
+    /*padding: 25px;*/
+    color: #fff;
+    text-decoration: none;
+    /* fixing padding for nav */
+    padding-top: 30px;
+    padding-right: 55px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+/* Use the hover action to change the button background color and font color when the mouse is over it */
+nav a:hover {
+    background-color: #dbd9cd;
+    color: #044a1d;
+}
+
+/* Removing unnecessary margins from our sections so they stack right on top of each other */
+section {
+    margin: 0;
+}
+
+/* Creating a custom ID for our first section with a background color and plenty of padding */
+/* Name your section IDs something descriptive */
+#main {
+    background-color: #dbd9cd;
+    color: #0c275e;
+    padding: 80px;
+}
+
+/* Creating a custom ID for our second section with a background color and plenty of padding */
+/* Name your section IDs something descriptive */
+#accomplishments {
+    background-color: #002907;
+    color: #dbd9cd;
+    padding: 80px;
+}
+
+/* Creating a custom ID for our third section with a background color and plenty of padding */
+/* Name your section IDs something descriptive */
+#life {
+    background-color: #cccccc;
+    color: #0c275e;
+    padding: 60px;
+}
+
+/* Fluidly controlling the width of our images with a percent value */
+img {
+    width: 35%;
+}
+
+/* Setting values for the footer section where our site copyright is displayed */
+footer {
+    background-color: #044a1d;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+#subheader {
+    color: #fff;
+}
+
+/* Bunch of crazy mobile stuff. Thank you Kyle! */
+/* Our first media query will apply special rules for screens smaller than 1400px */
+@media screen and (max-width: 1400px) {
+
+    /* If your screen is smaller than 1400px, we don't want a fixed container width of 1000px, so we'll switch to a fluid 80% */
+    .container {
+        width: 80%;
+    }
+
+    /* Making the site title slightly smaller */
+    h1 {
+        font-size: 48px;
+    }
+
+    /* Making the site subtitle slightly smaller */
+    h2 {
+        font-size: 36px;
+    }
+
+    /* Reducing the padding on the site header */
+    header {
+        padding: 200px;
+    }
+
+}
+/* Our second media query will apply special rules for screens smaller than 800 */
+@media screen and (max-width: 800px) {
+
+    /* On a small screen, we need as much real estate as we can get. The container should span the entire width of the device screen. */
+    .container {
+        width: 100%;
+    }
+
+    /* Making the site title slightly smaller for smaller screens */
+    h1 {
+        font-size: 36px;
+    }
+
+    /* Making the site sub title slightly smaller for smaller screens */
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Shrinking the height and reducing the padding on the header section to get it to fit properly on smaller screens */
+    header {
+        height: 75px;
+        padding: 150px;
+    }
+
+}
+
+
+/* Our final media query will apply special rules for screens smaller than 400, such as a phone */
+@media screen and (max-width: 400px) {
+
+    /* On a small screen, we need as much real estate as we can get. The container should span the entire width of the device screen. */
+    .container {
+        width: 100%;
+    }
+
+    /* Things get tricky on smaller screens. We have to adjust the sizing of our navigation buttons so they do not wrap */
+    nav a {
+        width: 70px;
+        font-size: 0.9em;
+        padding: 20px;
+    }
+
+    /* On a small screen, we should set the font size for the site back to default, which is around 16pt. This will help with legibility. */
+    body {
+        font-size: 1.0em;
+    }
+
+    /* Adjusting the site header to be skinner and taller with a height and adjusting the top and bottom padding */
+    header {
+        height: 200px;
+        padding: 200px 0 100px 0;
+    }
+
+    /* Ensuring the site title is legible on a small screen */
+    h1 {
+        font-size: 36px;
+    }
+
+    /* Reducing padding in our sections, to better fit content on a smaller screen */
+    #main {
+        padding: 40px;
+    }
+
+    #paintings {
+        padding: 40px;
+    }
+
+    #life {
+        padding: 40px;
+    }
+
+    /* Set images to display nice and large on a smaller screen */
+    img {
+        width: 100%;
+    }
+
+}
