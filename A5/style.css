@@ -1,4 +1,6 @@
 /* Setting the background color for the site and fonts to use */
+
+
 body {
     background-color: #efefef;
     font-family: Arial, Tahoma;
@@ -30,6 +32,7 @@ header {
 /* Setting the color for all h1 elements */
 h1 {
     color: #fff;
+/* rubric Web Font */
     font-family: 'Suez One', Arial, Verdana;
     text-shadow: 4px 4px #00054b;
     font-size: 50px;
@@ -131,11 +134,10 @@ footer {
 }
 
 #subheader {
-    color: #fff;
+    color: #000;
 }
 
 /* Bunch of crazy mobile stuff. Thank you Kyle! */
-/* Our first media query will apply special rules for screens smaller than 1400px */
 @media screen and (max-width: 1400px) {
 
     /* If your screen is smaller than 1400px, we don't want a fixed container width of 1000px, so we'll switch to a fluid 80% */
