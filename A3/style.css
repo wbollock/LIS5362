@@ -33,8 +33,8 @@ nav a {
     height: 25px;
     text-align: center;
     background-color: #044a1d;
-    #padding: 45px;
-    #margin: 10px;
+    /*padding: 45px;*/
+    /*margin: 10px;*/    
     color: #fff;
     text-decoration: none;
     /* fixing padding for nav */
