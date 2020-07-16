@@ -1,3 +1,12 @@
+/* fixing my awful button mistakes */
+
+#left_btn {
+    padding: 25px;
+}
+
+#right_btn {
+    padding: 25px;
+}
 
 body {
     background-color: #efefef;
@@ -62,7 +71,7 @@ nav a {
     text-decoration: none;
     /* fixing padding for nav */
     padding-top: 30px;
-    padding-right: 55px;
+    padding-right: 80px;
     padding-bottom: 30px;
     padding-left: 30px;
 }
