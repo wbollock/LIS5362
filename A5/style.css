@@ -64,7 +64,7 @@ nav {
 
 nav a {
     display: inline-block;
-    width: 100px;
+    width: 200px;
     height: 25px;
     text-align: center;
     background-color: #044a1d;
@@ -72,10 +72,11 @@ nav a {
     color: #fff;
     text-decoration: none;
     /* fixing padding for nav */
-    padding-top: 30px;
-    padding-right: 55px;
+    /*padding-top: 30px;
+    padding-right: 80px;
     padding-bottom: 30px;
-    padding-left: 30px;
+    padding-left: 30px;*/
+    padding: 25px;
 }
 
 
